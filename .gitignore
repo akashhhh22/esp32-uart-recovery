@@ -1,0 +1,35 @@
+# Firmware and private recovery material: never publish full flash images.
+*.[bB][iI][nN]
+*.elf
+*.hex
+*.map
+*.uf2
+backup/
+backups/
+private/
+raw/
+logs/
+*.log
+*.dump
+*.bak
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+secrets.h
+arduino_secrets.h
+credentials*
+*.pem
+*.key
+
+# Build/editor/OS artifacts
+build/
+.pio/
+.arduinoIDE/
+.vscode/
+.idea/
+__pycache__/
+Thumbs.db
+Desktop.ini
+.DS_Store

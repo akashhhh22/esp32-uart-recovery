@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750" role="img" aria-labelledby="title desc">
+  <title id="title">ESP32 recovery connection setup</title>
+  <desc id="desc">Laptop USB connects to an ESP8266 NodeMCU. External power from a power bank supplies the ESP32 USB power input. NodeMCU header TX connects to ESP32 TX0, RX to RX0, and GND to GND. NodeMCU EN connects to its own GND. Header mapping is board-specific; signals use 3.3 V logic and positive supply rails remain separate.</desc>
+  <rect width="1000" height="750" rx="24" fill="#181a1b"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="500" y="47" fill="#f5f7fa" font-size="27" font-weight="700">Connection setup</text>
+    <g stroke="#10a89e" stroke-width="5" fill="none">
+      <path d="M205 225V345"/>
+      <path d="M795 225V345"/>
+    </g>
+    <g fill="#202427" stroke="#94a3b8" stroke-width="2">
+      <rect x="50" y="85" width="310" height="140" rx="20"/>
+      <rect x="640" y="85" width="310" height="140" rx="20"/>
+      <rect x="640" y="345" width="310" height="265" rx="20"/>
+    </g>
+    <rect x="50" y="345" width="310" height="265" rx="20" fill="#152725" stroke="#10a89e" stroke-width="2"/>
+    <g fill="#f5f7fa">
+      <text x="205" y="143" font-size="32" font-weight="700">Laptop</text>
+      <text x="205" y="181" font-size="24">USB and COM port</text>
+      <text x="795" y="127" font-size="30" font-weight="700">External power</text>
+      <text x="795" y="163" font-size="24">(power bank)</text>
+      <text x="795" y="198" font-size="23">USB power only</text>
+      <text x="205" y="407" font-size="34" font-weight="700">ESP8266</text>
+      <text x="205" y="446" font-size="25">NodeMCU</text>
+      <text x="795" y="407" font-size="34" font-weight="700">ESP32</text>
+      <text x="795" y="446" font-size="25">WROOM</text>
+    </g>
+    <g stroke="#10a89e" stroke-width="3">
+      <path d="M360 465H640"/>
+      <path d="M360 520H640"/>
+      <path d="M360 575H640"/>
+    </g>
+    <g fill="#e2e8f0">
+      <rect x="390" y="443" width="220" height="44" rx="10"/>
+      <rect x="390" y="498" width="220" height="44" rx="10"/>
+      <rect x="390" y="553" width="220" height="44" rx="10"/>
+    </g>
+    <g fill="#334155" font-size="25">
+      <text x="500" y="474">TX ↔ TX0</text>
+      <text x="500" y="529">RX ↔ RX0</text>
+      <text x="500" y="584">GND ↔ GND</text>
+    </g>
+    <text x="500" y="663" fill="#f5f7fa" font-size="26">ESP8266 EN → its own GND</text>
+    <text x="500" y="712" fill="#b8c0cb" font-size="18">Conceptual wiring. Verify your exact board pin labels before use.</text>
+  </g>
+</svg>
